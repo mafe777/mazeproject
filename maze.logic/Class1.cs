@@ -126,9 +126,8 @@
         }
         public bool CouldFindWayOut()
         {
-           // var i = N;
-            //var j = N;
-            if (_maze[ N - 2, N - 1] == '→' || _maze[N - 2, N - 1] == '↓' || _maze[N - 2, N - 1] == '←')
+      
+            if (_maze[N - 2, N - 1] == '→' )
             {
                 return true;
             }
@@ -136,6 +135,7 @@
             {
                 return false;
             }
+            //|| _maze[N - 2, N - 1] == '↓' || _maze[N - 2, N - 1] == '←'
         }
 
     }

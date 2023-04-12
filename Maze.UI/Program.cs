@@ -1,8 +1,8 @@
 ﻿
 using maze.logic;
-Console.WriteLine("----------MAZE----------");
+Console.WriteLine(" ----------MAZE----------");
 Console.ForegroundColor = ConsoleColor.White;
-var maze = new MyMaze(25,70);
+var maze = new MyMaze(25,100);
 Console.Write(maze);
 Console.ForegroundColor = ConsoleColor.White;
 Console.BackgroundColor = ConsoleColor.Black;
@@ -14,17 +14,15 @@ if (yesornot)
 {
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("¡ Se pudo salir del laberinto !");
+    Console.WriteLine("you could get out of the maze :) ");
     Console.ForegroundColor = ConsoleColor.White;
-    Console.BackgroundColor = ConsoleColor.Black;
-    Console.WriteLine();
+   
 }
 else
 {
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Red; ;
-    Console.WriteLine("¡ No se pudo llegar al final del laberinto !");
+    Console.WriteLine("sorry, you could not get out of the maze :( ");
     Console.ForegroundColor = ConsoleColor.White;
-    Console.BackgroundColor = ConsoleColor.Black;
-    Console.WriteLine();
+    
 }
